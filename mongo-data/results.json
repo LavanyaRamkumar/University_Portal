@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5d435f4010e2c2a951ff88f5"},"USN":"01FB16D888","name":"Mike","course":[{"ISA1":"4","ISA2":"4","Project":"88","ESA":"99","c_id":"UE16CS102"},{"ISA1":{"$numberInt":"33"},"ISA2":{"$numberInt":"99"},"Project":{"$numberInt":"66"},"c_id":"UE16CS103"}],"cur_sem":{"$numberInt":"4"}}
+{"_id":{"$oid":"5d435f4010e2c2a951ff88f6"},"USN":"01FB16D889","name":"Michael","course":[{"c_id":"UE16CS102","veri":true,"ISA1":{"$numberInt":"56"},"teacher":"PCS181"}],"cur_sem":{"$numberInt":"4"}}

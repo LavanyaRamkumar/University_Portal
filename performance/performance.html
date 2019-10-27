@@ -1,0 +1,80 @@
+  <html>
+  <head>
+  	<title>Performance</title>
+  	 <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="http://localhost:5000/static/student1/assets/images/logo4.png" type="image/x-icon">
+  <meta name="description" content="">
+  	    <link rel="stylesheet" href="http://localhost:5000/static/student1/assets/tether/tether.min.css">
+  <link rel="stylesheet" href="http://localhost:5000/static/student1/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:5000/static/student1/assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="http://localhost:5000/static/student1/assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="http://localhost:5000/static/student1/assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="http://localhost:5000/static/student1/assets/theme/css/style.css">
+  <link rel="stylesheet" href="http://localhost:5000/static/student1/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  </head>
+  <body>
+  	  <section class="section-table cid-ruAHeohO9I" id="table1-5">
+  	<div class="container container-table" >
+  	      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">
+          Performance</h2>
+
+    <div id="chart_div" style="width: 65% ; height:65%;margin: 0 auto"></div>
+</div>
+</section>
+
+<p>{{data}} </p>
+
+
+
+ 	<script type="text/javascript" src="http://localhost:5000/static/JS/loader.js"></script>
+ 	<script type="text/javascript">
+ 		google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Grade');
+      data.addColumn('number', 'Students');
+
+      data.addRows([
+        ["F", 2],
+        ["E", 5],
+        ["D", 10],
+        ["C", 42],
+        ["B", 63],
+        ["A", 51],
+        ["S", 30]
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Grade'
+        },
+        vAxis: {
+          title: 'Number of students'
+        },
+        legend :'none'
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+ 	</script>
+
+ 	<script src="http://localhost:5000/static/student1/assets/web/http://localhost:5000/static/student1/assets/jquery/jquery.min.js"></script>
+	<script src="http://localhost:5000/static/student1/assets/popper/popper.min.js"></script>
+	<script src="http://localhost:5000/static/student1/assets/tether/tether.min.js"></script>
+	<script src="http://localhost:5000/static/student1/assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="http://localhost:5000/static/student1/assets/smoothscroll/smooth-scroll.js"></script>
+	<script src="http://localhost:5000/static/student1/assets/datatables/jquery.data-tables.min.js"></script>
+	<script src="http://localhost:5000/static/student1/assets/datatables/data-tables.bootstrap4.min.js"></script>
+	<script src="http://localhost:5000/static/student1/assets/theme/js/script.js"></script>
+  </body>
+  </html>

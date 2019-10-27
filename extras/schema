@@ -1,0 +1,41 @@
+Assessments:
+
+Collections:
+
+Results:
+
+{
+	"course" : [
+		{
+			"c_id" : "UE16CS102",
+			"ISA1" : 78,
+			"teacher" : "PCS181",
+			"ISA2" : 34
+		},
+		{
+			"c_id" : "UE16CS103",
+			"ISA2" : 45,
+			"teacher" : "PCS181"
+		}
+	],
+	"cur_sem" : 4,
+	"USN" : "01FB16D888"
+}
+
+
+Policy:
+
+{
+	"Approved" : 1,
+	"internals" : {
+		"ISA2" : "20",
+		"ISA1" : "20"
+	},
+	"externals" : {
+		"Project" : "20",
+		"ESA" : "40"
+	},
+	"course" : "UE16CS102"
+}
+
+

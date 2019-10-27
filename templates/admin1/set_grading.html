@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.10.5, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.10.5, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="../../static/teacher1/assets/images/logo4.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <title>Results</title>
+  <link rel="stylesheet" href="../../static/teacher1/assets/tether/tether.min.css">
+  <link rel="stylesheet" href="../../static/teacher1/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../static/teacher1/assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../../static/teacher1/assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="../../static/teacher1/assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../static/teacher1/assets/theme/css/style.css">
+  <link rel="stylesheet" href="../../static/teacher1/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+
+  <style type="text/css">
+
+    
+  	#DataTables_Table_0_info {
+  		color : #f9f9f9;;
+  	}
+  	select{
+  		 font-variant: sans-serif;
+  		 color: #3C3737;
+  		 font-size: 20px;
+ 
+  	}
+  	option{
+  		background-color: #D7D4D0;
+  	}
+  	button{
+  		background-color: #D7D4D0;
+  		border: 0px;
+      border-radius: 10%;
+       font-variant: sans-serif;
+       color: #3C3737;
+       font-size: 20px;
+  	}
+  	button:focus{
+  		outline: 0;
+  		background-color: white;
+  		border: 0px;
+  	}
+  	button:hover{
+  		cursor: pointer;
+  	}
+
+    input{
+      background-color: #D7D4D0;
+      border: 0px;
+      border-radius: 10%;
+       font-variant: sans-serif;
+       color: #3C3737;
+       font-size: 20px;
+    }
+    input:focus{
+      outline: 0;
+      background-color: white;
+      border: 0px;
+    }
+    input:hover{
+      cursor: pointer;
+    }
+
+    #d {
+      margin-top : 10px;
+      position: relative;
+      right : -915px;
+    }
+
+    #a {
+      margin-top : 10px;
+      margin-left : 10px;
+    }
+    
+
+  </style>
+  
+  
+  
+</head>
+<body>
+
+  <iframe src="{{url_for('index3')}}" width="100%" height="75px" style="margin: 0 0;border: 0px ;position: fixed;z-index: 10;"></iframe><br><br><br>
+
+  <section class="cid-ruAHeohO9I" id="table1-5">
+
+  
+  
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">
+          Set Grading Scheme</h2>
+      
+      	
+  
+   
+    </div>
+
+      <div class="table-wrapper">
+        <div class="container">
+          
+        </div>
+
+        <!--
+
+            -->
+
+        <!--<div class="container scroll">-->
+          <!--function setCourse(data, cname){
+    var o = document.createElement("option");
+    o.text = data+" - "+cname;
+    o.value = data;
+    document.getElementById("cat").add(o);
+} -->
+<div class="container container-table">
+      
+      <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
+        Course : &nbsp 
+        <select id="cat" onchange="choosegrading()">
+          <option> percentage </option>
+          <option> GPA </option>
+  </select>
+</h3>
+        </div>
+   
+<center id = "cur">
+</center>
+</br>
+</br>
+<center>
+<input class= "btn btn-primary" type="submit" value="Submit" id = "sub">
+</center>
+
+<center><div id = "status" ></div></center>
+
+</section>
+
+
+
+
+<script src="../../static/JS/set_grading.js">  </script>
+
+  <!--section class="engine"><a href="https://mobirise.info/v">free html templates</a></section--><script src="../../static/teacher1/assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="../../static/teacher1/assets/popper/popper.min.js"></script>
+  <script src="../../static/teacher1/assets/tether/tether.min.js"></script>
+  <script src="../../static/teacher1/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../static/teacher1/assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="../../static/teacher1/assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="../../static/teacher1/assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="../../static/teacher1/assets/theme/js/script.js"></script>
+  
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+  </body>
+</html>

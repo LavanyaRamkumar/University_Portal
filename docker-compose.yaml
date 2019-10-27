@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+   acts:
+      build: .
+      ports:
+         - "27017:27017"
+   
+   
+
+   
+
+   

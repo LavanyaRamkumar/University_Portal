@@ -1,0 +1,44 @@
+sudo docker build -t test .
+Sending build context to Docker daemon  9.646MB
+Step 1/8 : FROM python:3.5-jessie
+ ---> 7104a16c4324
+Step 2/8 : RUN apt-get update -y
+ ---> Using cache
+ ---> 2bc2a77bbce8
+Step 3/8 : WORKDIR /root
+ ---> Using cache
+ ---> 68d6825ba6cd
+Step 4/8 : RUN mkdir app
+ ---> Using cache
+ ---> 49e17345a1b1
+Step 5/8 : COPY . ./app/
+ ---> Using cache
+ ---> 2efdeb5baebe
+Step 6/8 : RUN pip install -qr ./app/requirements.txt
+ ---> Using cache
+ ---> 8543b7807c0e
+Step 7/8 : ENTRYPOINT ["python3", "./app/flask_t.py"]
+ ---> Using cache
+ ---> c39a171a6c32
+Step 8/8 : EXPOSE 5000
+ ---> Using cache
+ ---> 687e5703d3a9
+Successfully built 687e5703d3a9
+Successfully tagged test:latest
+lavanya@lavanya:~/Documents/WISE/Results/menu_r$ sudo docker run --network="host" -p 5000:5000 test
+WARNING: Published ports are discarded when using host network mode
+ * Serving Flask app "flask_t" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 651-466-896
+127.0.0.1 - - [11/Sep/2019 14:40:17] "GET /upload_marksh HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2019 14:40:17] "GET /static/teacher1/assets/tether/tether.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2019 14:40:17] "GET /static/teacher1/assets/bootstrap/css/bootstrap-reboot.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2019 14:40:17] "GET /static/teacher1/assets/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2019 14:40:17] "GET /static/teacher1/assets/bootstrap/css/bootstrap-grid.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2019 14:40:17] "GET /static/teacher1/assets
