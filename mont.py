@@ -13,11 +13,11 @@ import smtplib
 
 app = Flask(__name__)
 cors = CORS(app)
-uri = "mongodb://test-mongo:HvsOvWIPrHpFgfItPH0WWBkOF7CjEXqJRrNl5DBuo5vhxJPMh0zwjoBstOkMSs7SEiNDqZPM3alSq1vhRMCbRg==@test-mongo.documents.azure.com:10255/?ssl=true&replicaSet=globaldb"
+uri = "uri"
 client = MongoClient(uri)
 #client = MongoClient(port=27017)
 db = client.pes3
-app.secret_key = 'lava'
+app.secret_key = 'key'
 
 @app.route("/teacher")
 def index():
